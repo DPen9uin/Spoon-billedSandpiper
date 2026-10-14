@@ -1,5 +1,5 @@
 
-intro:第一幕｜初见世界
+intro:Chapter 1｜初见世界
   |夏季 · 俄罗斯远东 楚科奇
   -fontSize=large
   -backgroundColor=rgba(0, 0, 0, 1)
