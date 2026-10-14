@@ -1,0 +1,125 @@
+intro:Chapter 7｜再次出发|秋季 · 中国江苏 条子泥;
+bgm:Animenz Piano Sheets_Hikaru Nara_Your Lie in April OP1 (Piano)_H.ogg;
+
+changeBg:日出.png -next;
+setTransform:{"brightness":0.15,"blur":6} -target=bg-main -duration=0 -next;
+setTransform:{"brightness":1,"blur":0} -target=bg-main -duration=3000 -next; 
+miniAvatar:none;
+:远处传来潮水声和鸟鸣声。清晨的条子泥笼罩着一层淡淡的薄雾，天空从灰蓝逐渐变亮;
+:太阳刚刚从远方升起，在浅水和泥滩上，留下金色的倒影;
+changeBg:船.png -next;
+:潮水已经开始退去，大片湿润的泥滩重新出现在海水之外;
+changeFigure:一般白勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"rotation":0,"duration":0},{"rotation":0.1,"duration":280},{"rotation":-0.1,"duration":280},{"rotation":0,"duration":320}] -target=hero -next;
+
+:新的一天开始了;
+:经过休息和觅食，小勺嘴鹬已经重新补充了迁徙需要的能量;
+changeFigure:none -id=hero -next;
+
+
+changeBg:风车鸟浪.png -next;
+:越来越多的鸟结束觅食。几只鸻鹬拍动翅膀飞起，附近的鸟类也陆续加入鸟群;
+:天空中的鸟越来越多;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:可是，我的第一次迁徙，还没有结束;
+miniAvatar:none;
+:条子泥，只是漫长迁徙路上的中转站;
+:在更加遥远的南方，还有正等待它抵达的越冬地;
+
+changeBg:俯瞰条子泥.png -next;
+changeFigure:none -id=hero -next;
+setComplexAnimation:universalSoftIn -target=bg-main -duration=1200 -next;
+:小勺嘴鹬飞了起来。它转过身，看向整个条子泥;
+:大片退潮后的泥滩、正在觅食的候鸟、远处的高潮位栖息地、正在巡护的工作人员、一批又一批的旅客;
+:第一次离开楚科奇的时候，它还不知道自己为什么一定要向南飞;
+:它只是跟随着身体里的本能，踏上了一条从未走过的路;
+:现在，它已经知道了;
+
+changeBg:条子.png -next;
+changeFigure:一般白勺.png -id=hero -next;
+setTransition: -enter=enter-from-bottom -target=hero -ignoreDefault;
+:它落到了脚下湿润的泥滩上，一只小虾在泥水中惊慌逃窜;
+:它没有继续觅食，而是重新看向远方;
+changeFigure:none -id=hero -next;
+changeBg:楚科奇.png -next;                 ; 闪回：辽阔的楚科奇苔原
+wait:500;
+changeBg:海滩上好多鸟.png -next;            ; 闪回：漫长的海岸线
+wait:500;
+changeBg:晚上.png -next;                    ; 闪回：黑夜中的飞行
+wait:500;
+changeBg:辐射沙脊群.png -next;              ; 闪回：新万金不断消失的滩涂
+wait:500;
+changeBg:条子森林.png -next;
+:长途飞行需要消耗大量能量。候鸟必须停下来，找到可以休息、觅食的地方;
+:迁徙路上的每一片湿地，都可能决定无数只候鸟，还能不能继续飞下去;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:所以……;
+小勺嘴鹬:每一片湿地，都很重要;
+
+changeBg:打哈欠.png -next;
+changeFigure:大滨鹬.png -right -id=bigbird -next;
+changeFigure:一般白勺.png -left -id=hero -next;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:我要继续出发了。;
+miniAvatar:大滨鹬.png;
+大滨鹬:第一次迁徙，还习惯吗？;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:很累;
+小勺嘴鹬:不过，我学会了很多东西;
+miniAvatar:大滨鹬.png;
+大滨鹬:那就继续飞吧。前面还有很长的路;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:我们还会再见吗？;
+miniAvatar:大滨鹬.png;
+大滨鹬:（看向远方）;
+大滨鹬:如果这片滩涂一直都在……;
+wait:600;
+大滨鹬:我们就还有机会，来年，在迁徙的路上再次见面;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:（点头）;
+changeFigure:none -id=bigbird -next;
+changeFigure:none -left -id=hero -next;
+miniAvatar:none;
+changeBg:好多好多好多鸟.png -next;
+:远处传来连续的鸟鸣声，一大群候鸟从泥滩上飞起;
+changeFigure:一般白勺.png -id=hero -next;
+:（点击画面中的小勺嘴鹬，继续它的迁徙）;
+setTransform:{"position":{"x":2000,"y":-2000}}
+  -target=hero
+  -duration=1000
+  -ease=bounceIn;
+changeFigure:none -id=hero -next;
+:它转身，开始向前奔跑。一步，两步，拍动翅膀，逐渐离开地面;
+:它再次出发了;
+:这一次，它不再只是跟随着迁徙的本能;
+:它已经开始，认识这条漫长的迁徙之路;
+changeBg:俯瞰条子泥.png -next;
+setTransform:{"scale":{"x":1.15,"y":1.15}} -target=bg-main -duration=0 -next;
+:条子泥一点点缩小;
+:鸟群继续向南，条子泥逐渐融入黄海海岸;
+
+
+changeBg:海.png -next;
+:这里不是它旅程的终点;
+filmMode:none;
+:每一年，数以千万计的候鸟，沿着东亚—澳大利西亚迁飞路线往返;
+:它的第一次迁徙，还在继续;
+intro:一只候鸟的迁徙
+  |需要的不只是一片湿地
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+intro:保护每一处重要的停歇地
+  |才能让完整的迁徙之路延续下去
+  |生命……会守护生命……
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+filmMode:enable;
+:THE END;
+end;

@@ -1,0 +1,23 @@
+; =============================================================================
+bgm:松本文紀_空気力学少女と少年の詩.ogg -enter=50;
+changeBg:白色勺嘴鹬大图.png -next; ; 封面背景（也可换成 落日滩涂.png）
+intro:小勺嘴鹬的第一次迁徙
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+intro:——一个关于滩涂与鸻鹬类鸟类的故事
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+
+:欢迎来到这个故事;
+:你即将跟随一只新生的小勺嘴鹬，完成它人生中的第一次迁徙;
+:在这条贯彻它生命的路上，你将会认识一些新的鸟类朋友;
+:也会看见，一片滩涂正在被怎样守护;
+:准备好了吗？;
+
+changeScene:01_破壳.txt;                    ; 进入第一幕

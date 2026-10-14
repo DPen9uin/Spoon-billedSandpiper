@@ -1,0 +1,118 @@
+
+intro:第一幕｜初见世界
+  |夏季 · 俄罗斯远东 楚科奇
+  -fontSize=large
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500
+  -userForward;
+
+bgm:鸣潮先约电台_YUE_STEVEN_繁星、新生，与你 Astrum Unicum_H.ogg;
+changeBg:楚科奇.png -next;                          ; 苔原全景（低机位）
+setTransform:{"brightness":0} -target=bg-main -duration=0 -next;
+setTransform:{"brightness":1} -target=bg-main -duration=2500 -next;   ; 画面由黑慢慢亮起
+                                            ; 【音效建议】持续的苔原风声
+
+miniAvatar:none;
+:在俄罗斯远东寒冷的楚科奇苔原上，一个浅浅的鸟巢、几枚小小的鸟蛋，正安静地躺在低矮的苔藓之间;
+:（笃笃……）;
+
+changeBg:蛋.png -next;                      ; 推到鸟蛋近景（画面中还能隐约看到旁边另外几枚卵）
+setTransform:{"scale":{"x":1.05,"y":1.05}} -target=bg-main -duration=4000 -next;  ; 缓慢推进
+
+:这是勺嘴鹬夫妇的孩子们;
+:勺嘴鹬爸爸和勺嘴鹬妈妈轮流守护着这些鸟蛋;
+:经过大约20天的孵化，新的生命已经准备好来到这个世界了;
+
+
+:（……）;
+:（点击画面，看看会发生什么）;
+
+; ---------------------------------------------------------------------------
+; 镜头②：第一次点击 —— 它动了
+; ---------------------------------------------------------------------------
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":5,"y":-3},"duration":130},{"position":{"x":0,"y":0},"duration":120},{"position":{"x":-5,"y":2},"duration":130},{"position":{"x":0,"y":0},"duration":180}] -target=bg-main -next;
+                                            ; 【音效建议】很轻的一声“笃……”
+:咦？它动了;
+:小勺嘴鹬已经发育成熟，正在尝试冲破蛋壳;
+生命的第一次挑战，开始了;
+
+; 镜头再靠近一点
+setTransform:{"scale":{"x":1.25,"y":1.25}} -target=bg-main -duration=1200 -next;
+:（再点击一次。）;
+
+; ---------------------------------------------------------------------------
+; 镜头③：第二次点击 —— 第一道裂缝
+; ---------------------------------------------------------------------------
+setTempAnimation:[{"rotation":0,"duration":0},{"rotation":0.012,"duration":90},{"rotation":-0.01,"duration":90},{"rotation":0,"duration":120}] -target=bg-main -next;
+                                            ; 【音效建议】“咔。”一声轻响
+:咔——蛋壳上出现了第一道裂缝;
+:小家伙正在一点一点地啄开自己的蛋壳;
+                                            ; 【音效建议】从蛋壳里传出的、很轻的“啾……”
+:（一个小小的喙尖，从裂口顶了一下，又缩了回去）;
+
+setTempAnimation:[{"rotation":0,"duration":0},{"rotation":0.02,"duration":80},{"rotation":-0.015,"duration":80},{"rotation":0.01,"duration":80},{"rotation":0,"duration":120}] -target=bg-main -next;
+顶出来的是一个小小的喙尖，刚孵化的小勺嘴鹬不会立刻露出一张夸张的勺状嘴;
+:（准备好，让小勺嘴鹬迎接这个世界）;
+
+; ---------------------------------------------------------------------------
+; 镜头④：第三次点击 —— 破壳（此后自动演出）
+; ---------------------------------------------------------------------------
+setTempAnimation:[{"duration":0},{"brightness":2,"contrast":0,"duration":180,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":220},{"brightness":2.2,"contrast":0,"duration":160,"ease":"circIn"},{"brightness":1,"contrast":1,"duration":300}] -target=bg-main -next;
+                                            ; 【音效建议】连续的“咔——咔——”，随后是一声清脆的破壳声
+:咔——咔——顶部的一块蛋壳，慢慢被顶开了;
+
+changeBg:小勺嘴鹬.png -next;                ; 湿漉漉的小勺嘴鹬特写
+setAnimation:enter-from-bottom -target=bg-main -next;
+:一只湿漉漉的小勺嘴鹬，先露出了头;
+wait:1200;                                  ; 停顿一两秒，让它挣扎
+:它努力着，把身体一点点从蛋壳里挪了出来;
+
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":0,"y":6},"duration":100},{"position":{"x":0,"y":0},"duration":140}] -target=bg-main -next;
+                                            ; 【音效建议】“啪。”一小块蛋壳落到苔藓上
+:啪。一小块蛋壳落在了旁边的苔藓上;
+:现在的小勺嘴鹬很小、很湿，也很累;
+
+; ---------------------------------------------------------------------------
+; 镜头⑤：第一次看到这个世界（主观视角：由模糊到清晰）
+; ---------------------------------------------------------------------------
+setTextbox:hide;                            ; 暂时关掉文本框，让学生安静地“看”
+setTransform:{"blur":14,"brightness":0.2} -target=bg-main -duration=0 -next;
+setTransform:{"blur":10,"brightness":0.5} -target=bg-main -duration=1600 -next;   ; 眼睛睁开一道缝
+setTransform:{"blur":4,"brightness":0.8} -target=bg-main -duration=1800;          ; 世界慢慢有了轮廓
+setTransform:{"blur":0,"brightness":1} -target=bg-main -duration=2000 -next;      ; 终于看清了
+wait:600;
+setTextbox:on;                              ; 恢复文本框
+
+:它睁开眼，首先看到的，是低矮的植物;
+:然后是天空，和正在随风晃动的草;
+changeFigure:一般红勺.png -left -id=parent -next; ; 亲鸟低头看向它
+setTransition: -target=parent -enter=enter-from-right;
+miniAvatar:minipic_一般红勺.png;
+亲鸟:啾……;
+miniAvatar:minipic_一般白勺.png;
+小勺嘴鹬:啾……;
+
+:（小勺嘴鹬出生了）;
+
+; ---------------------------------------------------------------------------
+; 镜头⑥：分镜结尾 —— 第一次站起来
+; ---------------------------------------------------------------------------
+changeFigure: -left -id=parent -next;
+changeFigure:小勺嘴鹬.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"position":{"x":0,"y":30},"duration":0},{"position":{"x":0,"y":0},"duration":900},{"position":{"x":0,"y":18},"duration":500},{"position":{"x":0,"y":0},"duration":900}] -target=hero -next;
+                                            ; 摇摇晃晃地站起来
+miniAvatar:minipic_一般白勺.png;
+小勺嘴鹬:（我站起来了……）;
+:这就是我们的主角——一只刚刚出生的小勺嘴鹬 -notend;
+changeFigure:none -id=hero -next;
+changeBg:楚科奇.png -next;
+小小的巢、低矮的苔原、远处的水面，还有辽阔的楚科奇天空;
+:现在的它还不知道，在不久之后，一场跨越数千公里的旅程正在等待着它;
+
+
+
+changeScene:02_第一次觅食.txt;
+

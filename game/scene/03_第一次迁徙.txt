@@ -1,0 +1,85 @@
+intro:第三幕｜第一次迁徙|秋季 · 俄罗斯远东 → 黄海;
+
+
+bgm:岸部真明 (Masaaki Kishibe)_Time travel (穿越)_H.ogg;
+changeBg:楚科奇.png -next;
+setTransform:{"brightness":0.3,"saturation":0.8} -target=bg-main -duration=0 -next;
+setTransform:{"brightness":1,"saturation":1,"colorRed":255,"colorGreen":225,"colorBlue":170} -target=bg-main -duration=2500 -next;
+
+miniAvatar:none;
+:时间一天天过去，短暂的北方夏季结束了;
+:几片变黄的矮柳叶，从画面上方慢慢飘落。远处水面泛起细小的波纹，天空比往常更加灰冷;
+:萨米语里的“tū̄ndra”——无树的草原——它的休眠期到了;
+
+changeFigure:一般红勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+小勺嘴鹬:这是我的第一个秋天;
+:小勺嘴鹬已经长出了能够飞翔的羽毛，雄鸟也早已离开这里，开始向南迁徙;
+:现在，轮到它了 -notend;
+changeFigure:none -id=hero;
+
+
+changeBg:守望.jpeg -next; ; 天空中偶尔掠过的南迁鸟群
+:没有爸爸妈妈带路，也没有谁告诉它应该什么时候出发;
+:但随着秋天到来，一种与生俱来的本能，正在催促着它——向南飞;
+changeFigure:一般红勺.png -id=hero -next;
+:（点击画面中的小勺嘴鹬，开始它的第一次迁徙）;
+
+setTransform:{"position":{"x":2000,"y":-2000}}
+  -target=hero
+  -duration=1500
+  -keep;
+changeFigure:none -id=hero -next;
+:它向前跑出几步，拍动翅膀，离开了地面 -notend;
+changeBg:楚科奇湖.jpg -transform={"scale":{"x":2,"y":2}} -next;
+setTransform:{"scale":{"x":1,"y":1}} -target=bg-main -duration=10000;
+:脚下的苔原越来越小，出生和觅食过的浅水塘，渐渐消失在身后;
+:就这样，它离开了出生的楚科奇苔原;
+:一场跨越数千公里的旅程，开始了;
+
+
+pixiInit;                                   ; 初始化舞台特效（使用 Pixi 特效前必须先执行）
+pixiPerform:rain; ; 高纬度上空飘落的雪（可选氛围；不喜欢就删掉这一行和上一行）
+changeBg:楚科奇日落.jpg -next; ; 航拍视角：黄褐色苔原、弯曲的小河、零散的湖泊
+:大片黄褐色的苔原、弯曲的小河、零散的湖泊逐渐远去，还有突然出现的雨;
+changeBg:候鸟迁徙.jpg -next;
+:（一开始只有它自己，但渐渐地，远处出现了几只其他鸟，它慢慢靠过去……）;
+:哪怕是第一次迁徙的勺嘴鹬，也能找到南迁的方向——这是它基因中的记忆;
+pixiInit;                                   ; 离开冻原，清除雪特效（再次执行 pixiInit 即清空全部特效）
+
+
+changeBg:烟台.jpg -next; ; 宽阔弯曲的河流穿过湿地，支流分叉
+setAnimation:blur -target=bg-main -next;    ; 转场：由虚到实的推进感
+:它不断地飞行，翅膀下的景色不断变换——;
+:海湾、河流、城市……;
+changeBg:渤海湾.jpg -next;
+:这是一次6000多公里的长途飞行;
+:白天，鸟群飞过河流，太阳在天空一侧;
+:黄昏，背景变成暖橙色，远处低矮的海湾被夕阳照亮，它的剪影划过天空
+setTransform:{"brightness":0.35,"saturation":0.7,"colorRed":150,"colorGreen":180,"colorBlue":255}
+  -target=bg-main
+  -duration=2000
+  -next;
+changeBg:海.png -next; ; 黑夜
+:太阳又一次经过……;
+:天空的画面变成深蓝色，月亮升起，下方只能隐约看到海岸和水面。它还在飞;
+:对于只有手掌大小的勺嘴鹬来说，这是一次漫长的旅行;
+:一路上，它无法停歇，直到到达——;
+changeBg:俯瞰1.png -next;
+:滩涂;
+changeBg:条子.png -next;
+setTransform:{"colorRed":255,"colorGreen":255,"colorBlue":255} -target=bg-main -duration=1200 -next;
+miniAvatar:一般红勺.png;
+小勺嘴鹬:（双脚接触泥滩，向前跑了几步，终于停下来。胸口快速起伏，稍微整理了一下羽毛）;
+小勺嘴鹬:终于……停下来了;
+miniAvatar:none;
+changeBg:俯瞰条子泥.png -next;              ; 远处是一望无际的泥滩和浅水
+
+intro:中国 · 黄海|江苏盐城 · 条子泥;
+bgm:ryo_夏の大三角 (夏之大三角)_H.ogg -enter=1000;
+:经过漫长的南迁，它终于抵达了黄海之滨;
+:这里叫——条子泥;
+changeBg:鹬鹬.png -next;
+:一望无际的泥滩上，无数的鸟类正在觅食;
+
+changeScene:04_候鸟驿站.txt;

@@ -1,0 +1,159 @@
+intro:Chapter 5｜被守护的滩涂
+  |秋季 · 中国江苏 条子泥
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+
+
+bgm:ryo_夏の大三角 (夏之大三角)_H.ogg;
+changeBg:条子.png -next;
+changeFigure:一般白勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"rotation":0,"duration":0},{"rotation":0.1,"duration":300},{"rotation":-0.1,"duration":300},{"rotation":0.1,"duration":300},{"rotation":0,"duration":300}] -target=hero -next;
+:退潮后的条子泥，小勺嘴鹬正在湿润的泥滩上摆动勺状嘴寻找食物;
+changeBg:黑尾塍鹬拔虫子.png -next;
+changeFigure:none -id=hero -next;
+:旁边的一只黑尾塍鹬正在和沙蚕搏斗;
+:突然，远处传来脚步声和说话声;
+bgm:Kyle Xian_戦闘!マリィ_VS 玛俐 (精灵宝可梦 剑盾 BGM)_H.ogg;
+miniAvatar:黑尾塍鹬.png;
+黑尾塍鹬:是人类来了！快飞！;
+miniAvatar:none;
+changeFigure:瞪眼白勺.png -id=hero -next;   ; 换表情：警觉
+小勺嘴鹬:人类？！;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":40,"y":-50},"scale":{"x":0.9,"y":0.9},"duration":500},{"position":{"x":120,"y":-110},"scale":{"x":0.7,"y":0.7},"duration":700}] -target=hero -next;
+:几只距离较近的鸟警觉地抬起头。小勺嘴鹬立刻展开翅膀，飞到稍远的位置落下，躲在鸟群后方;
+changeFigure:none -id=hero -next;
+
+
+changeBg:海滩上好多鸟.png -next;
+:穿巡护服的人沿着远处的道路走过来，却在离鸟群很远的地方停下了;
+巡护员:（拿起望远镜，观察滩涂）;
+小勺嘴鹬:他们怎么停下来了？;
+changeBg:白色勺嘴鹬大图.png
+  -next; ; 望远镜圆形视野里的滩涂（可用 小蛎鹬.png 替换）
+setTransform:{"blur":5} -target=bg-main -duration=600 -next;   ; 望远镜的“虚化边缘”
+setTransform:{"blur":0} -target=bg-main -duration=600 -next;
+监测员:这里有一只没有环志的勺嘴鹬;
+监测员:应该是新个体，记录下来;
+
+
+changeBg:小勺子s.png -next;
+:不远处有一段隔离设施和醒目的提示牌;
+:几名游客站在外侧，一名游客想继续向前，巡护人员伸手示意他停下;
+巡护员:前面是鸟类活动区域，请在这里观察，不要再靠近了;
+:（游客停下脚步，拿起望远镜）;
+miniAvatar:minipic_一般白勺.png;
+changeFigure:瞪眼白勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+小勺嘴鹬:人类在干什么？;
+小勺嘴鹬:他们是不是要抓我？;
+
+
+changeFigure:none -id=hero -next;
+changeBg:光影俯瞰.png -next;
+setTransform:{"brightness":0.9} -target=bg-main -duration=0 -next;
+:时间一点点过去。远处的潮水开始上涨，海水一点一点向泥滩推进;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":-20,"y":0},"duration":1200},{"position":{"x":-40,"y":0},"duration":1200}] -target=hero -next;
+                                            ; 不断向后退
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:泥滩要被淹没了！;
+changeBg:好多好多好多鸟.png -next;
+setAnimation:enter-from-bottom -target=bg-main -next;
+miniAvatar:none;
+:大批候鸟同时飞起，小勺嘴鹬跟上鸟群;
+
+
+changeBg:人工庇护所720.png -next; ; 涨潮后的高潮位栖息地
+bgm:ryo_夏の大三角 (夏之大三角)_H.ogg -enter=1000;
+setComplexAnimation:universalSoftIn -target=bg-main -duration=1200 -next;
+intro:720亩高潮位候鸟栖息地
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+:前方出现一片开阔的浅水湿地，这里仍然保留着浅水区、裸露泥地和可以站立的高处;
+:大量候鸟已经聚集在这里休息。小勺嘴鹬跟随鸟群降落;
+changeFigure:瞪眼白勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+小勺嘴鹬:听说这里以前是人类养鱼的地方;
+小勺嘴鹬:现在变成给我们歇脚的地方了吗？;
+
+
+changeFigure:none -id=hero -next;
+changeBg:互花米草.png -next;                ; 转场：第二天，潮水再次退去
+setTransform:{"scale":{"x":1.1,"y":1.1}} -target=bg-main -duration=1500 -next;
+:小勺嘴鹬向另一个方向飞去，看见了大片密集的绿色植物;
+:植物越来越密，裸露的泥滩越来越少;
+changeFigure:瞪眼白勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":30,"y":0},"duration":500},{"position":{"x":30,"y":10},"rotation":-0.06,"duration":300},{"position":{"x":30,"y":0},"rotation":0,"duration":300}] -target=hero -next;
+                                            ; 走到植物边缘，试图进入，却被挡住
+小勺嘴鹬:这里怎么没有地方找吃的了？;
+changeFigure:none -id=hero -next;
+bgm:三澤康広_宴がはじまる! (宴会开始了！)_H.mp3;
+changeFigure:牛背鹭.png -next;
+？？？:呱！这是互花米草滩呱！;
+changeBg:互花米草1.png -next;
+changeFigure:none -next;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:啊！吓我一跳！;
+小勺嘴鹬:你是谁啊？;
+miniAvatar:牛背鹭.png;
+牛背鹭:我是牛背鹭呱！;
+牛背鹭:那些人类说这些互花米草是从其他地方进入这里的外来植物呱，是坏草呱！;
+miniAvatar:none;
+
+
+changeBg:挖互花米草.png -next;
+setAnimation:shake -target=bg-main -next;   ; 机器作业的震动感
+                                            ; 【音效建议】“轰——轰——”的机械声
+:远处传来机械声。几台载着人类的金属怪物正在互花米草生长区域张牙舞爪;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:这是什么怪物？;
+miniAvatar:牛背鹭.png;
+牛背鹭:这是人类造的铁牛呱！;
+changeBg:拖拉机和牛背鹭.png -next;          ; 治理现场（可用 挖互花米草.png 替换）
+牛背鹭:这个铁牛非常的劲呱！跟在后面吃到的虫子比真牛还多呱！;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:这个铁牛……把互花米草铲掉了！又有地方找吃的了！;
+setAnimation:blur -target=bg-main -next;
+miniAvatar:none;
+:牛背鹭怪叫了一声，飞到了铁牛旁边;
+changeFigure:开心白勺.png -id=hero -next;
+setTempAnimation:[{"rotation":0,"duration":0},{"rotation":0.12,"duration":260},{"rotation":-0.12,"duration":260},{"rotation":0,"duration":300}] -target=hero -next;
+小勺嘴鹬:人类在把泥滩还给我们！;
+bgm:ryo_夏の大三角 (夏之大三角)_H.ogg;
+changeFigure:none -id=hero -next;
+changeBg:理毛.png -next;                    ; 清晨
+setTransition: -target=hero -enter=enter-from-bottom;
+:小勺嘴鹬重新站在一片开阔的泥滩上。它理了理羽毛，向四周看去——;
+changeBg:海滩上好多鸟.png -next;            ; 闪回：巡护人员停在远处
+wait:500;
+changeBg:条子.png -next;                    ; 闪回：游客被拦在鸟类活动区域外
+wait:500;
+changeBg:人工庇护所720.png -next;           ; 闪回：涨潮后的720亩高潮位栖息地
+wait:500;
+changeBg:挖互花米草.png -next;              ; 闪回：机器清除互花米草
+wait:500;
+changeBg:理毛.png -next; ; 回到现在
+:远处，一名巡护员从海堤上经过。他没有走向鸟群，只是停下来，用望远镜看了一眼，然后继续向前走;
+:小勺嘴鹬没有飞走，低下头继续寻找食物;
+:小勺嘴鹬终于明白了;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:人类不是来赶走我们的;
+小勺嘴鹬:他们是在给我们留下可以吃饭、休息和生活的地方;
+miniAvatar:none;
+
+
+changeBg:落日滩涂.png -next;                ; 傍晚的滩涂
+setTransform:{"colorRed":255,"colorGreen":205,"colorBlue":150} -target=bg-main -duration=2000 -next;
+:傍晚，夕阳照在大片滩涂上。小勺嘴鹬打了个哈欠，望着远处的鸟群不断飞起、落下;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:可是……;
+小勺嘴鹬:为什么这里需要这么多人类保护呢？;
+
+changeScene:06_回不去的滩涂.txt;

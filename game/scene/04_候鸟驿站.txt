@@ -1,0 +1,247 @@
+intro:Chapter 4｜候鸟驿站
+  |夏末 · 中国江苏 条子泥
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+bgm:麻枝准_渚_H.ogg;
+changeBg:条子.png -next;
+setTransform:{"brightness":0.6} -target=bg-main -duration=0 -next;
+setTransform:{"brightness":1} -target=bg-main -duration=2000 -next;
+changeFigure:一般红勺.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":0,"y":10},"duration":200},{"position":{"x":0,"y":0},"duration":260}] -target=hero -next;
+                                            ; 降落、向前跑几步、停住
+:（双脚接触泥滩，向前跑了几步后停下来）;
+:长途跋涉后，小勺嘴鹬明显有些疲惫;
+changeFigure:none -id=hero -next;
+changeBg:好多好多好多鸟.png -next;
+miniAvatar:一般红勺.png;
+小勺嘴鹬:这里怎么有这么多鸟？;
+小勺嘴鹬:不管了，先去找点吃的吧;
+miniAvatar:none;
+:长距离的飞行，使小勺嘴鹬鸡蛋般的体重减轻了近一半;
+:现在的它，非常需要补充能量;
+changeBg:海滩上好多鸟.png -next;
+:退潮以后，大片泥滩重新露出了水面;
+:对于刚刚完成长途飞行的候鸟来说，这里就像一座巨大的“候鸟食堂”;
+:有的鸟在浅水中走动，有的低头不停觅食，有的成群站在泥滩上休息;
+changeBg:红色小勺子.png -next;
+:小勺嘴鹬已经饿的快两眼昏花了，它决定先去找点吃的;
+miniAvatar:开心红勺.png;
+小勺嘴鹬:长了个勺子真方便！随便翻几下就能找到虾吃;
+changeBg:打盹.png -next;
+miniAvatar:none;
+:一连几天，小勺嘴鹬不是在找吃的，就是在睡觉;
+changeBg:吃吃吃.png -next;
+:直到它突然发现，自己的新羽毛已经长出来了;
+changeFigure:瞪眼白勺.png -next;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:咦？我怎么变白了;
+changeFigure:开心白勺.png -next;
+小勺嘴鹬:不过总算是吃饱了，四处看一下这里吧！;
+changeFigure:none -next;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:那是什么？;
+changeBg:蟹蟹.png -next;
+miniAvatar:选择小头像;
+bgm:一之瀬剛_戦い(VS野生ポケモン) (战斗（VS野生神奇宝贝）)_H.ogg -volume=80;
+:野生的螃蟹出现了！;
+miniAvatar:招潮蟹.png;
+螃蟹:（盯……）;
+changeBg:蟹bro.png -next;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:（盯……）;
+miniAvatar:伤心白勺.png;
+小勺嘴鹬:这玩意我能吃吗……;
+miniAvatar:伤心白勺.png;
+小勺嘴鹬:它的夹子好可怕！;
+miniAvatar:none;
+:一只招潮蟹正在对着小勺嘴鹬挥舞它的大钳子，看起来像是某种邪恶的怪兽正在举行某种不可名状的仪式;
+miniAvatar:招潮蟹.png;
+螃蟹:（盯……）;
+changeFigure:招潮蟹.png -right -next;
+miniAvatar:伤心白勺.png;
+小勺嘴鹬:啊啊啊啊啊啊啊！！！！！;
+changeFigure:大滨鹬.png -left -transform={"position":{"x":-2000}} -next;
+setTransform:{"position":{"x":0},"scale":{"x":1}}
+  -target=fig-left
+  -duration=1000
+  -ease=bounceOut
+  -next;
+miniAvatar:none;
+:就在这千钧一发的时刻，一只鸟扑了过来;
+:只见这只鸟以迅雷不及掩耳之势伸出了脖子;
+:仅此一招，便将邪恶的螃蟹怪兽斩于马下 -notend;
+setTransform:{"position":{"x":675,"y":-150}}
+  -target=fig-left
+  -duration=1000
+  -ease=bounceIn
+  -parallel
+  -next;
+setTransform:{"position":{"x":1000,"y":-1000},"rotation":3.141}
+  -target=fig-right
+  -duration=1000
+  -ease=circOut
+  -parallel;
+changeBg:海滩上好多鸟.png -next;
+changeFigure:none -left -next;
+changeFigure:none -right -next;
+miniAvatar:大滨鹬.png;
+bgm:麻枝准_渚_H.ogg -enter=500;
+？？？:味道不错……;
+？？？:咦？你谁啊，看我干嘛;
+miniAvatar:伤心白勺.png;
+小勺嘴鹬:我我我我……我第一次来这里……不不不不是很懂道上的的的规矩……;
+miniAvatar:大滨鹬.png;
+大滨鹬:原来是新来的啊，我是大滨鹬，老住户了，欢迎来到条子泥！;
+大滨鹬:你自己一个鸟吗？;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:嗯……是的;
+小勺嘴鹬:（呼……吓死我了，原来是个好说话的）;
+miniAvatar:大滨鹬.png;
+大滨鹬:还真是吗？新来的，出门在外，哪能没朋友呢？迁徙路上一只鸟多无聊;
+大滨鹬:来来来，看见那边没，我给你介绍几个朋友认识认识;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:额……好的？;
+miniAvatar:none;
+setAnimation:blur -target=bg-main -next;
+
+:认识几位新朋友 -notend;
+label:驿站菜单;
+choose:蛎鹬:看蛎鹬|黑脸琵鹭:看琵鹭|小青脚鹬:看小青脚鹬|黑嘴鸥:看黑嘴鸥|继续向前走:离开菜单;
+
+; —— 蛎鹬 ——
+label:看蛎鹬;
+changeBg:蛎鹬.png -next;                    ; 蛎鹬所在的泥滩（背景版素材）
+changeFigure:蛎鹬.png -left -next;
+setTransition: -target=bird -enter=enter-from-right;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:啊！胡萝卜嘴怪鸟！;
+miniAvatar:蛎鹬.png;
+蛎鹬:？;
+蛎鹬:什么胡萝卜嘴怪鸟，爷叔是蛎鹬！;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":0,"y":16},"duration":300},{"position":{"x":0,"y":0},"duration":400}] -target=bird -next;
+                                            ; 低头处理贝类
+蛎鹬:阿拉这嘴，撬开贝壳，轻而易举啊！;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:我是勺嘴鹬，你的嘴这么厉害吗？;
+小勺嘴鹬:可是我怎么听我爸讲过什么被贝壳夹住嘴的鹬最后会被人类一起抓走……;
+changeFigure:none -left -next;
+miniAvatar:蛎鹬.png;
+蛎鹬:……;
+蛎鹬:你爸有没有教过你说话的艺术……;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:我爸只教过我找吃的，你撬贝壳也是你爸教的吗？;
+miniAvatar:蛎鹬.png;
+蛎鹬:侬这孩子……;
+changeBg:小蛎鹬.png -next;
+蛎鹬:阿拉倒是想起来，小的时候搁上海滩，爷老头子教我吃鱼费了老大个子劲呐……;
+蛎鹬:今天找条弹涂鱼吃吧，不跟你扯东扯西了，Goodbye~;
+changeBg:蛎鹬.png -next;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:哦……;
+changeFigure:none -id=bird -next;
+jumpLabel:驿站菜单;
+
+; —— 黑脸琵鹭 ——
+label:看琵鹭;
+changeBg:黑脸琵鹭.png -next; ; 浅水区的场景（缺黑脸琵鹭立绘，用场景图过渡）
+miniAvatar:一般白勺.png;
+小勺嘴鹬:咦？你的嘴怎么也像一把勺子？;
+miniAvatar:黑脸琵鹭.png;
+黑脸琵鹭:咦？你也有勺子嘴？怎么样，是不是很棒？听他们说，我可是国家一级保护野生动物！;
+黑脸琵鹭:我会这样在水里左右扫，一碰到鱼虾，就可以一把抓住，顷刻炼……;
+miniAvatar:开心白勺.png;
+小勺嘴鹬:原来这里还有和我一样，长着“勺子嘴”的鸟！;
+miniAvatar:黑脸琵鹭.png;
+黑脸琵鹭:嗯……你要来点鱼不？;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:（看着个头顶自己一半大的鱼）;
+小勺嘴鹬:还是你自己吃吧，下次见！;
+changeFigure:none -id=bird -next;
+jumpLabel:驿站菜单;
+
+; —— 小青脚鹬 ——
+label:看小青脚鹬;
+changeBg:小青脚鹬.png -next;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:那是青脚鹬吧，我在老家见过它们;
+小勺嘴鹬:它跑的好快！;
+miniAvatar:小青脚鹬.png;
+小青脚鹬:我是小青脚鹬！;
+miniAvatar:开心白勺.png;
+小勺嘴鹬:我是小勺嘴鹬！;
+miniAvatar:小青脚鹬.png;
+小青脚鹬:我是小青脚鹬！不是小的青脚鹬！我就是小青脚鹬！;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:哦……;
+miniAvatar:小青脚鹬.png;
+小青脚鹬:你是今年刚出生的吗？;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:是的;
+miniAvatar:小青脚鹬.png;
+小青脚鹬:太好了，那你一定要好好活下去……;
+小青脚鹬:我们小青脚鹬和你们勺嘴鹬……我听说族人们一年比一年少了;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:啊？我第一次知道……;
+miniAvatar:小青脚鹬.png;
+小青脚鹬:再见了，小勺嘴鹬，希望明年在这还能见到你;
+changeFigure:none -id=bird -next;
+jumpLabel:驿站菜单;
+
+; —— 黑嘴鸥 ——
+label:看黑嘴鸥;
+changeBg:黑嘴鸥.png -next;
+changeFigure:黑嘴鸥.png -left -id=bird -next;
+setTransition: -enter=enter-from-right -target=bird;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:你也是来这里休息的吗？;
+miniAvatar:黑嘴鸥.png;
+黑嘴鸥:我就是这里土生土长的，我是黑嘴鸥，你看，我的嘴是不是很好认？;
+miniAvatar:开心白勺.png;
+小勺嘴鹬:黑黑的！;
+miniAvatar:黑嘴鸥.png;
+changeBg:黑嘴鸥和红嘴鸥.png -next;
+changeFigure:none -left -id=bird -next;
+黑嘴鸥:对喽，记住了，跟红嘴鸥那群家伙比，我们的嘴才比较好看！;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:额……好的……再见……;
+miniAvatar:none;
+changeFigure:none -id=bird -next;
+jumpLabel:驿站菜单;
+label:离开菜单;
+
+changeBg:其他小鸟.png -next;                ; 热闹的鸟群，画面另一侧却有一只独自站立的鸟
+:各种各样的小鸟在觅食，黑脸琵鹭在浅水中摆动长嘴，小青脚鹬快速穿过泥滩，远处的黑嘴鸥不断飞起落下;
+setTransition: -target=bigbird -enter=enter-from-right;
+miniAvatar:大滨鹬.png;
+:大滨鹬安静地站着。它没有和周围的鸟一起活动，只是望着远处的海面;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:大滨鹬，你怎么一个人在这里？;
+miniAvatar:大滨鹬.png;
+大滨鹬:我只是在想以前经过的一些地方;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:以前的地方？;
+miniAvatar:大滨鹬.png;
+大滨鹬:我飞过很多地方，也见过很多滩涂;
+大滨鹬:可是……不是每一片滩涂，都像这里这么幸运;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:什么意思？;
+miniAvatar:大滨鹬.png;
+大滨鹬:以后，你会慢慢知道的。;
+miniAvatar:none;
+changeBg:落日滩涂.png -next;
+:太阳落下，大滨鹬转过身，缓慢走向鸟群。小勺嘴鹬留在原地，看着它的背影;
+:来到这里以后，小勺嘴鹬才发现，原来在漫长的迁徙路上，它并不孤单;
+changeBg:落日.png -next;
+:一片滩涂，不只属于一只小鸟;
+:对于无数沿着东亚—澳大利西亚迁飞路线往返的候鸟来说，这里都是迁徙途中重要的休息站和补给站;
+intro:但不是每一片滩涂，都像这里这么幸运
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+changeScene:05_被守护的滩涂.txt;

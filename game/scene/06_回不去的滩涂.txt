@@ -1,0 +1,144 @@
+intro:Chapter 6｜回不去的滩涂|秋季 · 中国江苏 条子泥;
+bgm:麻枝准_渚_H.ogg;
+changeBg:光影俯瞰.png -next;
+setTransform:{"colorRed":255,"colorGreen":205,"colorBlue":150} -target=bg-main -duration=2000 -next;
+miniAvatar:none;
+:下午的条子泥。太阳把湿润的滩涂染成暖黄色，周围十分热闹;
+changeBg:麋鹿.png -next;
+:几只鸻鹬在浅水中寻找食物，不断低头啄食，远处的麋鹿聚在一起休息;
+changeBg:湖.png -next;
+:碱蓬地的水坑，成为了小鸟们的乐园;
+changeBg:鸟浪2.png -next;
+:小勺嘴鹬已经吃饱，悠闲地走在鸟群之间，看着天上各种各样的小鸟形成一道道鸟浪;
+:它突然停了下来;
+:不远处，那只年长的大滨鹬独自站在水边，没有觅食，也没有和其他鸟待在一起;
+changeBg:鸟浪.png -next;
+changeFigure:大滨鹬.png -left -next;
+setTransition: -target=bigbird -enter=enter-from-right;
+miniAvatar:开心白勺.png;
+小勺嘴鹬:又见到你啦！;
+miniAvatar:大滨鹬.png;
+大滨鹬:……;
+miniAvatar:开心白勺.png;
+小勺嘴鹬:大家都很喜欢这里！;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:你怎么还是不高兴？;
+miniAvatar:none;
+:（它没有马上回答，转头看向远处的海面）;
+
+
+changeFigure:none -left -next;
+miniAvatar:大滨鹬.png;
+大滨鹬:你是不是一直想知道……;
+大滨鹬:为什么这里需要这么多人类保护？;
+miniAvatar:瞪眼白勺.png;
+小勺嘴鹬:（点头）;
+miniAvatar:大滨鹬.png;
+大滨鹬:因为……这里是幸运的;
+大滨鹬:并不是每一片滩涂，都能一直留下来;
+bgm:Ken Arai_NEXT TO YOU_H.mp3 -enter=2000 -volume=80;
+miniAvatar:none;
+setComplexAnimation:universalSoftOff -target=bg-main -duration=1500 -next;
+changeBg:none -next;                        ; 画面淡出，进入回忆
+
+
+setAnimation:oldFilm -target=stage-main -next;
+                                            ; 老电影滤镜：让回忆画面有旧影像的质感
+pixiInit;                                   ; 初始化舞台特效
+pixiPerform:rain;                           ; 回忆里的阴雨氛围（不想要就删掉这两行）
+                                            ; 【BGM 建议】回忆段落换成低沉、缓慢的版本
+changeBg:辐射沙脊群.png -next;              ; 辽阔的潮间带
+intro:回忆 · 韩国西海岸 新万金;
+changeBg:曾经.png -next;
+miniAvatar:大滨鹬.png;
+大滨鹬:很久以前，新万金也是我们迁徙路上一座巨大的“候鸟食堂”;
+大滨鹬:每到迁徙季节，无数伙伴都会在这里停下来，补充能量。;
+changeBg:围垦.png -next;                    ; 施工设备、不断延伸的海堤
+大滨鹬:但是……;
+大滨鹬:后来，一道长长的海堤，把海水挡在了外面;
+大滨鹬:潮水不再像过去那样，每天进入滩涂;
+changeBg:新万金.png -next;
+setTransform:{"saturation":0.6,"brightness":0.8} -target=bg-main -duration=2500 -next;
+大滨鹬:一开始，只是食物变得越来越少;
+大滨鹬:但是不久，原本潮湿的泥滩发生了变化，水位改变，一些区域开始干裂;
+大滨鹬:那些人类……他们在建成的堤坝上面欢呼……;
+大滨鹬:我却只能看着家人和朋友们手足无措地死去;
+大滨鹬:最终……只有我，撑到了越冬地;
+大滨鹬:我再也见不到它们了……;
+wait:900;
+changeBg:施工.png -next; ; 鸟群变少
+wait:900;
+filmMode:enable;                            ; 进入电影模式，展示资料画面
+; ⚠ 缺素材：新闻/资料画面（占位名 新闻_大滨鹬减少.png）
+:2005年施工完成后 短短三年内 新万金及周边监测区域;
+:大滨鹬记录数量减少约8万只;
+:监测数据显示 在大滨鹬的迁徙终点 越冬地澳大利亚西北部的Roebuck海湾;
+:20000只大滨鹬消失了;
+filmMode:none;
+changeBg:鸟浪2.png -next;
+miniAvatar:大滨鹬.png;
+大滨鹬:开始的时候，我以为大家只是去了别的地方;
+wait:700;
+大滨鹬:可是后来，熟悉的鸟群越来越小;
+大滨鹬:有些伙伴，我再也没有在原来的迁徙路上见到;
+大滨鹬:我知道，它们再也回不来了……;
+setTransform:{"brightness":0.4} -target=bg-main -duration=2000 -next;
+
+changeBg:none -next;
+                                            ; 【音效建议】纸页翻动、新闻转场音
+大滨鹬:但是，新万金，并不是唯一发生变化的地方;
+filmMode:enable;
+changeBg:开发前.png -next; ; ⚠ 缺素材：占位名；可替换为 围垦.png
+:人类的围垦 道路和港口的开发建设;
+:部分潮间带被改变或直接被摧毁;
+changeBg:开发后.png -next;
+:有些滩涂被围起来，变成了陆地;
+:有些地方出现了道路、港口和建筑;
+
+
+changeBg:互花米草1.png -next;
+:互花米草快速扩张;
+:开阔滩涂不断被入侵植被占据;
+changeBg:赶海.png -next;
+:人类取乐的赶海;
+:却建立在对自然的破坏之上;
+filmMode:none;
+pixiInit;                                   ; 清除雨效，画面转干净
+setAnimation:removeFilm -target=stage-main -next;    ; 关闭老电影滤镜
+changeBg:鸟浪2.png -next; ; ⚠ 缺素材：占位名（东亚—澳大利西亚迁飞路线示意图）
+大滨鹬:我们没有办法，带着整个旅程需要的食物一起飞;
+大滨鹬:如果一片祖祖辈辈都在停留的歇脚地消失，那么我们中的大部分也会随之不见;
+大滨鹬:如果一个驿站消失了，我们就必须继续寻找下一个;
+大滨鹬:可是飞得越远，剩下的力气就越少;
+changeBg:好多好多好多鸟.png -next;
+大滨鹬:一年又一年，我们沿着相同的方向往返;
+大滨鹬:但是，有些熟悉的伙伴，再也没有回来;
+miniAvatar:伤心白勺.png;
+小勺嘴鹬:所以……;
+小勺嘴鹬:这里的人类一直保护滩涂，是因为这些地方，真的可能消失？;
+miniAvatar:大滨鹬.png;
+大滨鹬:是啊;
+:（它看向脚下的泥滩）;
+大滨鹬:对人来说，这可能只是一片泥地;
+wait:700;
+大滨鹬:可对正在迁徙的我们……;
+大滨鹬:它可能决定，我们还能不能继续飞下去;
+miniAvatar:none;
+changeBg:落日滩涂.png -next;
+:潮水正在缓慢退去，湿润的条子泥在夕阳下向远方延伸;
+:一群候鸟从远处飞来，在小勺嘴鹬面前逐渐下降，最终安全落在泥滩上;
+setComplexAnimation:universalSoftIn -target=bg-main -duration=1500 -next;
+:小勺嘴鹬看着这些刚刚抵达的候鸟，随后看看身旁的大滨鹬，再看向远处正在巡护的工作人员;
+miniAvatar:none;
+:这一刻，小勺嘴鹬终于明白了;
+:保护一片滩涂，不只是保护生活在这里的鸟;
+:也是为那些仍在几千公里迁徙路上的生命，留下下一处可以抵达的地方;
+changeBg:晚上.png -next;
+setTransform:{"brightness":0.55} -target=bg-main -duration=2500 -next;
+:天色逐渐变暗。小勺嘴鹬和大滨鹬并排站在滩涂上，远处的鸟群在夕阳中飞过;
+miniAvatar:一般白勺.png;
+小勺嘴鹬:如果这些滩涂没有被保护……;
+wait:1200;
+小勺嘴鹬:我们还能飞到哪里呢？;
+bgm:none -enter=2000;
+changeScene:07_再次出发.txt;

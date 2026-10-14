@@ -1,0 +1,10 @@
+Game_name:小勺嘴鹬的第一次迁徙;
+Game_key:a96ed41cf5d504;
+Title_img:标题.png;
+Title_bgm:松本文紀_空気力学少女と少年の詩.ogg;
+Textbox_theme:imss;
+Package_name:小勺嘴鹬的第一次迁徙;
+Show_panic:false;
+Default_Language:zh_CN;
+Game_Logo:白色勺嘴鹬大图.png;
+Enable_Appreciation:false;

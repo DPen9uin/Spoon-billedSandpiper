@@ -1,0 +1,92 @@
+; =============================================================================
+intro:第二幕｜第一次觅食
+  |第二天清晨
+  -fontSize=medium
+  -backgroundColor=rgba(0, 0, 0, 1)
+  -fontColor=rgba(255, 255, 255, 1)
+  -animation=fadeIn
+  -delayTime=1500;
+
+changeBg:楚科奇.png -next;
+setTransform:{"brightness":0.4} -target=bg-main -duration=0 -next;
+setTransform:{"brightness":1} -target=bg-main -duration=2200 -next;      ; 清晨的天光慢慢亮起
+bgm:松本文紀_夜の向日葵 (夜里的向日葵)_H.ogg;
+                                            ; 【BGM 建议】清晨、轻快的环境音乐
+
+miniAvatar:小勺嘴鹬.png;
+小勺嘴鹬:昨天我还在蛋壳里……;
+:刚出生时湿漉漉的小勺嘴鹬，现在已经变成一只黄褐色、带黑色斑纹的绒羽小鸟;
+:它站在昨天的巢旁边，身体只有很小一团，可细长的腿已经能够撑住身体了;
+miniAvatar:选择小头像;
+
+changeFigure:小勺嘴鹬.png -id=hero -next;
+setTransition: -target=hero -enter=enter-from-bottom;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":18,"y":-6},"duration":700},{"position":{"x":36,"y":0},"duration":600},{"scale":{"x":1.02,"y":0.98},"duration":200},{"position":{"x":54,"y":-4},"duration":700},{"position":{"x":72,"y":0},"duration":500}] -target=hero -next;
+:它先往前迈了一步，身体晃了一下，停下来，又迈了一步;
+:走得还有点不稳。;
+
+:出生还不到一天，小勺嘴鹬已经能够自己走路了;
+:作为一种早成鸟，勺嘴鹬的幼鸟孵化时已经有完整的绒羽，腿脚也发育得很好;
+
+
+; 镜头②：跟着爸爸去哪里
+
+changeFigure:none -id=hero -next;
+changeBg:楚科奇湖.jpg -next; ; 场景转到湿润苔原与浅水塘边缘
+                                            ; 【BGM 建议】水边环境音：水声、虫鸣
+:前面的地面越来越湿。浅浅的水只到脚踝，水边是苔藓和莎草，还有小虫从草间飞起来;
+
+miniAvatar:一般红勺.png;
+爸爸:低头，啄;
+miniAvatar:小勺嘴鹬.png;
+小勺嘴鹬:爸爸在找什么？;
+miniAvatar:none;
+:勺嘴鹬父亲在水边停下，低头，吃掉了一只很小的昆虫。小勺嘴鹬站在旁边，正盯着看;
+
+; —— 互动：选择去哪里找食物（两个选项都会成功）——
+:（小勺嘴鹬仔细看了看周围，找到了它认为可以吃的东西。）;
+choose:草叶下的小虫:捕食_草丛|浅水边的小虫:捕食_浅水;
+
+label:捕食_草丛;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":0,"y":14},"rotation":-0.05,"duration":260},{"position":{"x":0,"y":0},"rotation":0,"duration":320}] -target=hero -next;
+
+:它低下头，很快地啄了一下，又抬起头;
+jumpLabel:捕食成功;
+
+label:捕食_浅水;
+setTempAnimation:[{"position":{"x":0,"y":0},"duration":0},{"position":{"x":12,"y":10},"rotation":0.05,"duration":240},{"position":{"x":12,"y":0},"rotation":0,"duration":340}] -target=hero -next;
+:它往前走两步，把嘴伸进浅水，再抬起来;
+jumpLabel:捕食成功;
+
+label:捕食成功;
+miniAvatar:小勺嘴鹬.png;
+小勺嘴鹬:找到了！;
+miniAvatar:none;
+:成功了！;
+:没有谁把食物送到它嘴边。刚刚出生的小勺嘴鹬，很快就要开始自己寻找食物;
+勺嘴鹬主要以昆虫、昆虫幼虫、甲壳类、软体动物、环节动物及小型鱼类等无脊椎动物为食;
+
+
+:（小勺嘴鹬继续往前走……）;
+
+setTransform:{"scale":{"x":1.35,"y":1.35}} -target=bg-main -duration=1600 -next;
+changeFigure:小勺嘴鹬.png -id=hero;
+小勺嘴鹬:原来我的喙，是一把勺子 -notend;
+changeFigure:none -id=hero;
+:不过，现在还在北方苔原上的它，更多时候只是慢慢走着，从地面和浅水边啄起小虫;
+:等它以后来到海边的泥滩，这张特别的嘴，还会展现另一种本领;
+
+
+changeBg:楚科奇.png -next;
+setComplexAnimation:universalSoftIn -target=hero -duration=800 -next;
+:小勺嘴鹬抬起头，看向远方。天空中有几只鸟从远处飞过;
+miniAvatar:小勺嘴鹬.png;
+小勺嘴鹬:妈妈呢？;
+miniAvatar:none;
+:幼鸟出生后不久，雌鸟便会逐渐离开繁殖地，开始自己的南迁;
+:而雄鸟还会留下来一段时间，直到小家伙能够飞翔;
+:接下来的日子里，它每天都在吃东西、奔跑、长大;
+:而那双翅膀，也正在一天天变得有力;
+:时间逐渐过去，转眼间来到了夏末;
+
+changeScene:03_第一次迁徙.txt;
